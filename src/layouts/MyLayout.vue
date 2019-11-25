@@ -51,21 +51,8 @@ export default {
   data () {
     return {
       leftDrawerOpen: false,
-      textSizing: 2,
-      dateNow: '',
-      timeNow: ''
+      textSizing: 2
     }
-  },
-  methods: {
-    getTime () {
-      let timeStamp = Date.now()
-      this.dateNow = timeStamp.formatDate(timeStamp, 'YYYY-MM-DDTHH:mm:ss.SSSZ')
-      this.timeNow = timeStamp.formatDate(timeStamp, 'HH:mm')
-      console.log(this.dateNow)
-    }
-  },
-  mounted () {
-    this.getTime()
   }
 }
 </script>
